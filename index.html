@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Paper Hub</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: #fff;
+            text-decoration: none;
+            border: 2px solid #4CAF50;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .download-btn:hover {
+            background-color: #45a049;
+            border-color: #45a049;
+            text-align: center;
+        }
+
+        .footer {
+            background-color: #3498db;
+            color: #fff;
+            padding: 2px;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        .subject-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .subject-list li {
+            display: block;
+            background-color: #eee;
+            margin-bottom: 5px;
+            padding: 8px;
+            border-radius: 4px;
+        }
+
+        .hr {
+            border: none;
+            height: 5px;
+            background: linear-gradient(to right, #3498db, #e74c3c);
+            margin: 20px 0;
+        }
+
+        .watermark-text {
+            font-size: 34px;
+            font-family: 'Times new roman', sans-serif;
+            color: #000;
+            transform: rotate(-65deg);
+        }
+
+        .watermark {
+            position: fixed;
+            top: 0;
+            left:0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: left;
+            justify-content: center;
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body>
+<div class="watermark">
+            <p class="watermark-text">It's Me</p>
+        </div>
+    <div class="container">
+        
+        <h1>Welcome to the Question Paper Download Page</h1>
+        <p><h2><a href="https://whatsapp.com/channel/0029VaFLsOCIHphH7SZm710D"> Click Here </a> or Scan the Qr Code to
+                Join Our Whatsapp Channel to Get Notes</h2></p>
+        <img src="qr.jpeg" alt="Qr Code" style="max-width: 100%; height: auto; display: block; margin: 20px auto; border: 2px solid #ccc; border-radius: 50px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+
+        <label for="subject">Select a Subject:</label>
+        <select id="subject">
+            <option value="all">All Subjects</option>
+            <option value="ATC">ATC</option>
+            <option value="DBMS">DBMS</option>
+            <option value="CN">CN</option>
+            <option value="AI">AI</option>
+            <option value="SQ">Solved Q'p</option>
+        </select>
+
+        <ul class="subject-list">
+            <li data-subject="ATC">ATC 15CS54 Full Q'P till 2023 <a class="download-btn" href="15CS54 ATC.pdf" download="ATC 15CS54 ATC.pdf">Download PDF</a></li>
+            <li data-subject="ATC">ATC 17CS54 Full Q'P till 2023 <a class="download-btn" href="17CS54 ATC.pdf" download="ATC 17CS54 ATC.pdf">Download PDF</a></li>
+            <li data-subject="ATC">ATC 18CS54 Full Q'P till 2023 <a class="download-btn" href="18CS54 ATC.pdf" download="ATC 18CS54 ATC.pdf">Download PDF</a></li>
+
+            <div class="hr"><hr></div>
+
+            <li data-subject="DBMS">DBMS 15CS53 Full Q'P till 2023 <a class="download-btn" href="15CS53 DBMS.pdf" download="15CS53 DBMS.pdf">Download PDF</a></li>
+            <li data-subject="DBMS">DBMS 17CS53 Full Q'P till 2023 <a class="download-btn" href="17CS53 DBMS.pdf" download="17CS53 DBMS.pdf">Download PDF</a></li>
+            <li data-subject="DBMS">DBMS 18CS53 Full Q'P till 2023 <a class="download-btn" href="18CS53 DBMS.pdf" download="18CS53 DBMS.pdf">Download PDF</a></li>
+
+            <div class="hr"><hr></div>
+            <li data-subject="CN">CN 15CS53 Full Q'P till 2023 <a class="download-btn" href="15CS52 CN.pdf" download="15CS52 CN.pdf">Download PDF</a></li>
+            <li data-subject="CN">CN 17CS53 Full Q'P till 2023 <a class="download-btn" href="17CS52 CN.pdf" download="17CS52 CN.pdf">Download PDF</a></li>
+            <li data-subject="CN">DBMS 18CS53 Full Q'P till 2023 <a class="download-btn" href="18CS52 CN.pdf" download="15CS52 CN.pdf">Download PDF</a></li>
+
+            <div class="hr"><hr></div>
+
+            <li data-subject="AI">Artificial intelligence Full Q'P till 2023 <a class="download-btn" href="15CS AI.pdf" download="15CS52 CN.pdf">Download PDF</a></li>
+            <li data-subject="AI">Artificial intelligence Full Q'P till 2023 <a class="download-btn" href="15CS AI.pdf" download="15CS52 CN.pdf">Download PDF</a></li>
+            <li data-subject="AI">Artificial intelligence Full Q'P till 2023 <a class="download-btn" href="18CS52 CN.pdf" download="15CS52 CN.pdf">Download PDF</a></li>
+
+            <div class="hr"><hr></div>
+
+            <li data-subject="SQ">ATC Solved Q'P <a class="download-btn" href="ATC Solved QP.pdf" download="ATC Solved QP.pdf">Download PDF</a></li>
+            <li data-subject="SQ">DBMS Solved Q'P <a class="download-btn" href="DBMS Solved QP.pdf" download="DBMS Solved QP.pdf">Download PDF</a></li>
+            <li data-subject="SQ">CN Solved Q'P <a class="download-btn" href="CN Solved QP.pdf" download="CN Solved QP.pdf">Download PDF</a></li>
+
+            <div class="hr"><hr></div>
+        </ul>
+    </div>
+
+    <script>
+        document.getElementById('subject').addEventListener('change', function () {
+            var selectedSubject = this.value;
+            var subjectItems = document.querySelectorAll('.subject-list li');
+
+            subjectItems.forEach(function (item) {
+                if (selectedSubject === 'all' || item.getAttribute('data-subject') === selectedSubject) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    </script>
+
+    <div class="footer">
+        <p>&copy; 2023 All rights reserved to the original owners. | Powered by It's Me.</p>
+    </div>
+</body>
+
+</html>
